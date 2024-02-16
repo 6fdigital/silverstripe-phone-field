@@ -1,0 +1,7 @@
+de:
+  SixF\PhoneField\Forms\PhoneField:
+    INVALID: "Bitte geben Sie eine gültige Telefonnummer ein"
+    NO_INTERNATIONAL_FORMAT: "Bitte geben Sie die Telefonnummer im internationalen Format an (z.B. +49 {number})"
+  SixF\PhoneField\Model\EditablePhoneField:
+    PLURALNAME: "Telefonnummer-Feld"
+    SINGULARNAME: "Telefonnummer-Feld"
