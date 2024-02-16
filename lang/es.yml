@@ -1,0 +1,7 @@
+es:
+  SixF\PhoneField\Forms\PhoneField:
+    INVALID: "Por favor, ingrese un número de teléfono válido."
+    NO_INTERNATIONAL_FORMAT: "Por favor, ingrese el número de teléfono en formato internacional (por ejemplo, +34 {number})"
+  SixF\PhoneField\Model\EditablePhoneField:
+    PLURALNAME: "Campo de número de teléfono"
+    SINGULARNAME: "Campo de número de teléfono"

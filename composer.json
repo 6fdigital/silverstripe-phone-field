@@ -1,0 +1,22 @@
+{
+    "name": "6fdigital/silverstripe-phone-field",
+    "description": "A phone number field for the SilverStripe CMS with validation using libphonenumber",
+    "type": "silverstripe-vendormodule",
+    "require": {
+        "silverstripe/framework": "^4 | ^5",
+        "giggsey/libphonenumber-for-php": "^8.13"
+    },
+    "authors": [
+        {
+            "name": "Marco Kernler",
+            "email": "marco.kernler@kittelberger.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "6fdigital\\SilverstripePhoneField\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+
+}
