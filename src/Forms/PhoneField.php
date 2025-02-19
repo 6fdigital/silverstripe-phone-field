@@ -28,7 +28,9 @@ class PhoneField extends TextField
      */
     public function validate($validator): bool
     {
-        $result = true;
+        $result = parent::validate($validator);
+
+        // get the value
         $this->value = trim($this->value ?? '');
 
         // check if the phone number is in international format, if not
@@ -51,7 +53,6 @@ class PhoneField extends TextField
         $phoneUtil = PhoneNumberUtil::getInstance();
 
         try {
-
             // get the number proto
             $numberProto = $phoneUtil->parse($this->value);
 
@@ -80,7 +81,6 @@ class PhoneField extends TextField
             );
             $result = false;
         }
-
 
         return $this->extendValidationResult($result, $validator);
     }
