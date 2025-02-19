@@ -1,0 +1,7 @@
+nl:
+  SixF\PhoneField\Forms\PhoneField:
+    INVALID: "Voer alstublieft een geldig telefoonnummer in."
+    NO_INTERNATIONAL_FORMAT: "Voer het telefoonnummer in internationaal formaat in (bijv. +31 {number})"
+  SixF\PhoneField\Model\EditablePhoneField:
+    PLURALNAME: "Telefoonnummer veld"
+    SINGULARNAME: "Telefoonnummer veld"
