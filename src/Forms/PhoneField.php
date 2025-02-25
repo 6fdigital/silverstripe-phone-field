@@ -33,6 +33,11 @@ class PhoneField extends TextField
         // get the value
         $this->value = trim($this->value ?? '');
 
+        // only validate if a value is set
+        if (!$this->value) {
+            return $this->extendValidationResult($result, $validator);
+        }
+
         // check if the phone number is in international format, if not
         // we must abort as libphonenumber can't handle it
         if (!str_contains($this->value, "+")) {
