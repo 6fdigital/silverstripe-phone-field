@@ -4,6 +4,7 @@ A phone number field for the SilverStripe CMS with validation using libphonenumb
 ## Requirements
 * SilverStripe ^4 | ^5
 * [libphonenumber-for-php](https://github.com/giggsey/libphonenumber-for-php)
+* [libphonenumber-js](https://www.npmjs.com/package/libphonenumber-js)
 * SilverStripe Userforms (optional)
 
 ## Installation

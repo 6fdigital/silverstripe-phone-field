@@ -1,0 +1,22 @@
+{
+  "name": "6fdigital/silverstripe-phone-field",
+  "version": "1.0.0",
+  "description": "A phone number field for the SilverStripe CMS with validation using libphonenumber",
+  "main": "client/dist/bundle.js",
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "NODE_ENV=production rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Kernler",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.5",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.43.0"
+  },
+  "dependencies": {
+    "libphonenumber-js": "^1.12.9"
+  }
+}

@@ -2,8 +2,10 @@
 
 namespace SixF\PhoneField\Model;
 
+use SilverStripe\Core\Manifest\ModuleResourceLoader;
 use SilverStripe\Forms\FormField;
 use SilverStripe\UserForms\Model\EditableFormField;
+use SilverStripe\View\Requirements;
 use SixF\PhoneField\Forms\PhoneField;
 
 if (!class_exists(EditableFormField::class)) {
@@ -25,6 +27,12 @@ class EditablePhoneField extends EditableFormField
      */
     public function getFormField(): PhoneField
     {
+        // Load the JavaScript for the phone field
+        Requirements::javascript('silverstripe/admin:client/dist/js/i18n.js');
+        Requirements::add_i18n_javascript('vendor/6fdigital/silverstripe-phone-field/client/lang');
+        $jsUrl = ModuleResourceLoader::resourceURL('6fdigital/silverstripe-phone-field:client/dist/bundle.js');
+        Requirements::javascript($jsUrl, ['type' => 'module']);
+
          $field = PhoneField::create($this->Name, $this->Title ?: false, $this->Default)
             ->setFieldHolderTemplate(EditableFormField::class . '_holder')
             ->setTemplate(EditableFormField::class);
