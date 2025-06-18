@@ -29,6 +29,10 @@
         }
     },
     "extra": {
-        "installer-name": "silverstripe-phone-field"
+        "installer-name": "silverstripe-phone-field",
+        "expose": [
+            "client/dist/",
+            "client/lang/"
+        ]
     }
 }
