@@ -12,7 +12,7 @@
     "license": "Apache-2.0",
     "require": {
         "silverstripe/framework": "^4 | ^5",
-        "giggsey/libphonenumber-for-php": "^8.13"
+        "giggsey/libphonenumber-for-php": "^9"
     },
     "authors": [
         {
