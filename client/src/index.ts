@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const phoneNumber = phoneField.value.trim();
 
         // Ensure international format and validate
-        if (phoneNumber.indexOf('+') < 0) {
+        if (!phoneNumber.startsWith('+')) {
           const message = ss.i18n.inject(
             ss.i18n._t('PHONE_FIELD.NO_INTERNATIONAL_FORMAT'),
             {number: phoneNumber}
